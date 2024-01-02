@@ -39,8 +39,14 @@
   align-items: center;
   justify-content: center;
 
-  &.full {
-    width: 100%;
+  &.work {
+    padding-inline: 0;
+  }
+
+  &.hobbies {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 

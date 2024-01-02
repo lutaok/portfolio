@@ -2,6 +2,7 @@ import { Component, Index } from "solid-js";
 import "./work-timeline.scss";
 import Timeline from "./Timeline/Timeline";
 import TimelineStep from "./Timeline/TimelineStep";
+import WorkCard from "./WorkCard/WorkCard";
 
 interface WorkProject {
   title: string;
@@ -89,7 +90,19 @@ const WorkTimeline: Component = () => {
         <Index each={companies}>
           {(company) => (
             <TimelineStep id={company().id} title={company().name}>
-              <Index each={company().projects}>{(project) => <div>Ciao sono un progetto {project().title}</div>}</Index>
+              <div class="work-projects">
+                <Index each={company().projects}>
+                  {(project) => (
+                    <WorkCard
+                      id={project().title}
+                      title={project().title}
+                      description={project().description}
+                      position={project().position}
+                      skills={project().skills}
+                    />
+                  )}
+                </Index>
+              </div>
             </TimelineStep>
           )}
         </Index>

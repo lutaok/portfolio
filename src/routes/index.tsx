@@ -17,15 +17,15 @@ export default function Home() {
       <section id="intro" class="page-section container hero-container">
         <Hero />
       </section>
-      <section id="work" class="page-section work-container">
+      <section id="work" class="page-section container work-container">
         <h2>Work</h2>
-        <div class="container full">
+        <div class="container work">
           <WorkTimeline />
         </div>
       </section>
       <section id="hobbies" class="page-section hobbies-container">
         <h2>Hobbies</h2>
-        <div class="container">
+        <div class="container hobbies">
           <HobbyCard
             title="Speaker"
             description="Speaker in conferences"
