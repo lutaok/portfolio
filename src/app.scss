@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // Light
 @font-face {
   font-family: "Prompt";
@@ -30,27 +34,6 @@
   font-weight: 700;
 }
 
-// CSS Reset (Kevin Powell: https://www.youtube.com/watch?v=2lyDv0wOQuQ)
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font: inherit;
-}
-
-img,
-picture,
-video,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
 html {
   color-scheme: dark light;
   font-family: "Prompt";
@@ -58,6 +41,7 @@ html {
 
 body {
   background-color: var(--background);
+  background-image: url("/assets/diagmonds.png");
   color: var(--text);
 }
 
@@ -129,72 +113,73 @@ body {
   --accent-950: #050316;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --primary: #082cf7;
-    --secondary: #c4acc2;
-    --background: #fafbff;
-    --text: #010313;
-    --accent: #ffd500;
+// TODO: add theme switch to light
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --primary: #082cf7;
+//     --secondary: #c4acc2;
+//     --background: #fafbff;
+//     --text: #010313;
+//     --accent: #ffd500;
 
-    --text-50: #e7e5ff;
-    --text-100: #cfccff;
-    --text-200: #9e99ff;
-    --text-300: #6e66ff;
-    --text-400: #3d33ff;
-    --text-500: #0d00ff;
-    --text-600: #0a00cc;
-    --text-700: #080099;
-    --text-800: #050066;
-    --text-900: #030033;
-    --text-950: #01001a;
+//     --text-50: #e7e5ff;
+//     --text-100: #cfccff;
+//     --text-200: #9e99ff;
+//     --text-300: #6e66ff;
+//     --text-400: #3d33ff;
+//     --text-500: #0d00ff;
+//     --text-600: #0a00cc;
+//     --text-700: #080099;
+//     --text-800: #050066;
+//     --text-900: #030033;
+//     --text-950: #01001a;
 
-    --background-50: #e5e5ff;
-    --background-100: #ccccff;
-    --background-200: #9999ff;
-    --background-300: #6666ff;
-    --background-400: #3333ff;
-    --background-500: #0000ff;
-    --background-600: #0000cc;
-    --background-700: #000099;
-    --background-800: #000066;
-    --background-900: #000033;
-    --background-950: #00001a;
+//     --background-50: #e5e5ff;
+//     --background-100: #ccccff;
+//     --background-200: #9999ff;
+//     --background-300: #6666ff;
+//     --background-400: #3333ff;
+//     --background-500: #0000ff;
+//     --background-600: #0000cc;
+//     --background-700: #000099;
+//     --background-800: #000066;
+//     --background-900: #000033;
+//     --background-950: #00001a;
 
-    --primary-50: #e6e5ff;
-    --primary-100: #cdccff;
-    --primary-200: #9b99ff;
-    --primary-300: #6966ff;
-    --primary-400: #3633ff;
-    --primary-500: #0400ff;
-    --primary-600: #0300cc;
-    --primary-700: #030099;
-    --primary-800: #020066;
-    --primary-900: #010033;
-    --primary-950: #00001a;
+//     --primary-50: #e6e5ff;
+//     --primary-100: #cdccff;
+//     --primary-200: #9b99ff;
+//     --primary-300: #6966ff;
+//     --primary-400: #3633ff;
+//     --primary-500: #0400ff;
+//     --primary-600: #0300cc;
+//     --primary-700: #030099;
+//     --primary-800: #020066;
+//     --primary-900: #010033;
+//     --primary-950: #00001a;
 
-    --secondary-50: #e6ecff;
-    --secondary-100: #cdd8fe;
-    --secondary-200: #9ab1fe;
-    --secondary-300: #688bfd;
-    --secondary-400: #3564fd;
-    --secondary-500: #033dfc;
-    --secondary-600: #0231ca;
-    --secondary-700: #022597;
-    --secondary-800: #011865;
-    --secondary-900: #010c32;
-    --secondary-950: #000619;
+//     --secondary-50: #e6ecff;
+//     --secondary-100: #cdd8fe;
+//     --secondary-200: #9ab1fe;
+//     --secondary-300: #688bfd;
+//     --secondary-400: #3564fd;
+//     --secondary-500: #033dfc;
+//     --secondary-600: #0231ca;
+//     --secondary-700: #022597;
+//     --secondary-800: #011865;
+//     --secondary-900: #010c32;
+//     --secondary-950: #000619;
 
-    --accent-50: #fdfbe8;
-    --accent-100: #fbf8d0;
-    --accent-200: #f6f1a2;
-    --accent-300: #f2ea73;
-    --accent-400: #eee244;
-    --accent-500: #e9db16;
-    --accent-600: #bbaf11;
-    --accent-700: #8c840d;
-    --accent-800: #5d5809;
-    --accent-900: #2f2c04;
-    --accent-950: #171602;
-  }
-}
+//     --accent-50: #fdfbe8;
+//     --accent-100: #fbf8d0;
+//     --accent-200: #f6f1a2;
+//     --accent-300: #f2ea73;
+//     --accent-400: #eee244;
+//     --accent-500: #e9db16;
+//     --accent-600: #bbaf11;
+//     --accent-700: #8c840d;
+//     --accent-800: #5d5809;
+//     --accent-900: #2f2c04;
+//     --accent-950: #171602;
+//   }
+// }

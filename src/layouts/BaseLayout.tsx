@@ -1,15 +1,15 @@
 import { Meta, Title } from "@solidjs/meta";
 import { Component, JSX } from "solid-js";
 
-interface BaseLayoutProps {
+type BaseLayoutProps = {
   title: string;
   description: string;
   children: JSX.Element;
-}
+};
 
 const BaseLayout: Component<BaseLayoutProps> = (props) => {
   return (
-    <main>
+    <main class="bg-gradient-to-b from-transparent to-bgColor">
       <Meta name="description" content={props.description} />
       <Title>{props.title}</Title>
       {props.children}

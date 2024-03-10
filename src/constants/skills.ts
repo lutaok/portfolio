@@ -2,7 +2,7 @@ interface Skill {
   name: string;
 }
 
-export const SKILLS: Skill[] = [
+export const HERO_SKILLS: Skill[] = [
   {
     name: "typescript",
   },

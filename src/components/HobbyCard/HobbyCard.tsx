@@ -1,11 +1,11 @@
 import { Component } from "solid-js";
 
-interface HobbyCardProps {
+type HobbyCardProps = {
   title: string;
   description: string;
   linkTo: string;
   linkLabel: string;
-}
+};
 
 const HobbyCard: Component<HobbyCardProps> = (props) => {
   return (

@@ -1,23 +1,28 @@
 import { Component, For } from "solid-js";
-import { SKILLS } from "~/constants/skills";
+import { HERO_SKILLS } from "~/constants/skills";
 import SkillCircle from "./SkillCircle/SkillCircle";
-import "./skills.scss";
 
-interface SkillData {
+type SkillData = {
   name: string;
   alt: string;
-}
+};
 
 const Skills: Component = () => {
-  const skillData: SkillData[] = SKILLS.map((skill) => ({
+  const skillData: SkillData[] = HERO_SKILLS.map((skill) => ({
     name: skill.name,
     alt: `${skill.name} logo`,
   }));
 
   return (
-    <div class="skills-container">
-      <For each={skillData}>{(skill) => <SkillCircle name={skill.name} alt={skill.name} label={skill.name} />}</For>
-    </div>
+    <ul class="flex flex-wrap items-center justify-center gap-4 px-4">
+      <For each={skillData}>
+        {(skill) => (
+          <li>
+            <SkillCircle name={skill.name} alt={skill.name} label={skill.name} />
+          </li>
+        )}
+      </For>
+    </ul>
   );
 };
 
