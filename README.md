@@ -1,5 +1,7 @@
 # Lutaok Portfolio
 
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=34bdef88aef6&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 Hello there!<br/>
 Welcome to my personal portfolio repository.
 My website is currently hosted on DigitalOcean and you can find it here: [lutaok.dev](https://lutaok.dev)
