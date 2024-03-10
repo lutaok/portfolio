@@ -1,6 +1,6 @@
-interface Skill {
+type Skill = {
   name: string;
-}
+};
 
 export const HERO_SKILLS: Skill[] = [
   {
