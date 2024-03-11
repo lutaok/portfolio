@@ -5,6 +5,7 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "node ./.output/server/index.mjs",
+    "serve": "pnpm build && pnpm start",
     "format": "prettier --write .",
     "lint": "eslint ."
   },
