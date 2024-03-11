@@ -48,7 +48,7 @@ const config: Config = {
           950: "#050316",
         },
         bgColor: {
-          DEFAULT: "020f0b",
+          DEFAULT: "#020f0b",
           50: "#e9fcf6",
           100: "#d2f9ed",
           200: "#a5f3dc",
@@ -62,7 +62,7 @@ const config: Config = {
           950: "#031611",
         },
         words: {
-          DEFAULT: "e6f9f3",
+          DEFAULT: "#e6f9f3",
           50: "#eafaf5",
           100: "#d6f5eb",
           200: "#adebd7",
