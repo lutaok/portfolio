@@ -8,7 +8,10 @@ const Hero: Component = () => {
   return (
     <section class="flex flex-col items-center justify-between gap-8 px-10 py-6 lg:flex-row lg:px-40">
       <div class="flex grow flex-col gap-8 text-center">
-        <h1 class="bg-gradient-to-r from-primary to-accent to-75% bg-clip-text text-5xl text-black text-opacity-0">
+        <h1
+          id="about"
+          class="bg-gradient-to-r from-primary to-accent to-75% bg-clip-text text-5xl text-black text-opacity-0"
+        >
           Hello, I'm Lutaok
         </h1>
         <p>Experienced front-end developer specializing in crafting fast and efficient user interfaces.</p>
@@ -31,6 +34,14 @@ const Hero: Component = () => {
               class="flex aspect-square max-w-12 items-center justify-center overflow-hidden rounded-full"
             >
               <Icon name="linkedin-logo" />
+            </a>
+            <a
+              href="mailto:luca.digian@hotmail.com"
+              aria-label="Send mail to my address"
+              target="_blank"
+              class="flex aspect-square max-w-12 items-center justify-center overflow-hidden rounded-full"
+            >
+              <Icon name="mail" />
             </a>
           </div>
         </div>

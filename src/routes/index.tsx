@@ -9,7 +9,9 @@ export default function Home() {
       <Hero />
 
       <section class="flex flex-col gap-4 rounded-2xl border-b-2 border-t-2 border-primary-500 px-10 py-6 lg:px-40">
-        <h2 class="text-center text-2xl font-bold">Work Experiences</h2>
+        <h2 id="work-experiences" class="text-center text-2xl font-bold">
+          Work Experiences
+        </h2>
 
         <WorkExperience
           company="Accenture"
@@ -53,7 +55,9 @@ export default function Home() {
       </section>
 
       <section class="flex flex-col gap-10 px-10 py-6 lg:px-40">
-        <h2 class="text-center text-2xl font-bold">Side Projects</h2>
+        <h2 id="side-projects" class="text-center text-2xl font-bold">
+          Side Projects
+        </h2>
 
         <div class="flex flex-wrap justify-around gap-8">
           <ProjectCard
