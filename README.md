@@ -14,7 +14,9 @@ It's built with [SolidStart](https://github.com/solidjs/solid-start), **Typescri
 - [ ] Integration with DB
 - [ ] Dark/Light theme switch and design
 - [ ] Integration with Spotify API (my playlists)
-- [ ] Insert Footer and Header
+- [x] Insert Header
+- [ ] Insert Footer
+- [ ] Add logo
 
 ## Issues
 
