@@ -1,0 +1,56 @@
+name: Deploy Portfolio
+run-name: ${{ github.actor }} wants to deploy a new portfolio version
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: Deploy Workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.11.1"
+
+      - name: Set up PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Format
+        run: pnpm format
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          key: ${{ secrets.KEY }}
+          script: |
+            eval $(ssh-agent -s)
+            touch ~/.ssh/tmp-key
+            echo ${{ secrets.REPO_GITHUB_PASSPHRASE }} > ~/.ssh/tmp-key
+            chmod 400 ~/.ssh/tmp-key
+            cat ~/.ssh/tmp-key | SSH_ASKPASS=/bin/cat setsid -w ssh-add ~/.ssh/github_digital
+            rm -rf ~/.ssh/tmp-key
+            cd ${{ secrets.PROJECT_PATH }}
+            git pull
+            ssh-agent -k
+            export SSH_AUTH_SOCK=""
+            rm -rf ~/.ssh/ssh_auth_sock
