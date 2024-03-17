@@ -6,7 +6,7 @@ const Hero: Component = () => {
   let imgRef: HTMLImageElement | undefined;
 
   return (
-    <section class="flex flex-col items-center justify-between gap-8 px-10 py-6 lg:flex-row lg:px-40">
+    <>
       <div class="flex grow flex-col gap-8 text-center">
         <h1
           id="about"
@@ -54,7 +54,7 @@ const Hero: Component = () => {
           <img ref={imgRef} src="/images/bg-square-luca.png" alt="Lutaok" />
         </span>
       </div>
-    </section>
+    </>
   );
 };
 
