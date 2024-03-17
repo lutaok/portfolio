@@ -1,5 +1,6 @@
 import { Meta, Title } from "@solidjs/meta";
 import { Component, JSX } from "solid-js";
+import Footer from "~/components/Footer/Footer";
 import Header from "~/components/Header/Header";
 import Icon from "~/components/Icon/Icon";
 
@@ -26,6 +27,7 @@ const BaseLayout: Component<BaseLayoutProps> = (props) => {
         <Icon name="arrow-up" size="24" />
       </button>
       {props.children}
+      <Footer />
     </main>
   );
 };
