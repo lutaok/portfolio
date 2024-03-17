@@ -10,7 +10,7 @@ const Hero: Component = () => {
       <div class="flex grow flex-col gap-8 text-center">
         <h1
           id="about"
-          class="bg-gradient-to-r from-primary to-accent to-75% bg-clip-text text-5xl text-black text-opacity-0"
+          class="bg-gradient-to-r from-white to-primary-500 bg-clip-text text-5xl text-black text-opacity-0"
         >
           Hello, I'm Lutaok
         </h1>

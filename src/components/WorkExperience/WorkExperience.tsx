@@ -22,13 +22,13 @@ const WorkExperience: Component<WorkExperienceProps> = (props) => {
   };
 
   return (
-    <div class="flex gap-4">
+    <div class="flex gap-4 last-of-type:mb-6">
       <div class="flex flex-col items-center gap-0.5 pt-0.5">
         <span class="aspect-square max-h-4 w-4 rounded-full bg-primary-500" />
         {!props.isFirst && <span class="w-0 grow border border-primary-500" />}
       </div>
       <div>
-        <h3 class="text-xl font-bold">{props.company}</h3>
+        <h3 class="text-xl font-bold text-primary-500">{props.company}</h3>
         <span class="text-sm text-white text-opacity-75">
           {props.startFromMonth} - {props.endMonth ?? "Present"}
         </span>

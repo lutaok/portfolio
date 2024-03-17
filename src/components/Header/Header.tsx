@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Header: Component = () => {
   return (
-    <header class="w-full border-b-2 border-b-primary-500 bg-bgColor-950 px-16 py-4">
+    <header class="w-full rounded-2xl border-b-2 border-b-primary-500 bg-bgColor-950 px-16 py-4">
       <nav>
         <ul class="flex justify-end gap-10">
           <li>

@@ -17,7 +17,7 @@ type ProjectLink = {
 const ProjectCard: Component<ProjectCardProps> = (props) => {
   return (
     <div class="flex min-h-64 grow flex-col justify-between rounded-xl border-2 border-primary-500">
-      <h3 class="px-4 py-2 text-lg font-semibold text-primary-600">{props.title}</h3>
+      <h3 class="px-4 py-2 text-lg font-semibold text-primary-500">{props.title}</h3>
       {Array.isArray(props.description) ? (
         <ul class="grow px-4 py-2 text-sm text-words-50 text-opacity-85">
           <For each={props.description}>{(text) => <li>{text}</li>}</For>
