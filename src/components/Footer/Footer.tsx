@@ -2,7 +2,7 @@ import { Component } from "solid-js";
 
 const Footer: Component = () => {
   return (
-    <footer class="flex w-full justify-end rounded-2xl border-t-2 border-primary-500 bg-bgColor-950 px-16 py-4">
+    <footer class="flex w-full justify-end rounded-t-2xl border-t-2 border-primary-500 bg-bgColor-950 px-16 py-4">
       <div>
         Built with{" "}
         <a
