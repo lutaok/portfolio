@@ -23,6 +23,7 @@ const Hero: Component = () => {
               href="https://github.com/lutaok"
               aria-label="Go to my Github profile"
               target="_blank"
+              rel="noopener noreferrer"
               class="flex aspect-square max-w-12 items-center justify-center overflow-hidden rounded-full"
             >
               <Icon name="github-logo" />
@@ -31,6 +32,7 @@ const Hero: Component = () => {
               href="https://www.linkedin.com/in/lucadigianventura/"
               aria-label="Go to my LinkedIn profile"
               target="_blank"
+              rel="noopener noreferrer"
               class="flex aspect-square max-w-12 items-center justify-center overflow-hidden rounded-full"
             >
               <Icon name="linkedin-logo" />
@@ -39,6 +41,7 @@ const Hero: Component = () => {
               href="mailto:luca.digian@hotmail.com"
               aria-label="Send mail to my address"
               target="_blank"
+              rel="noopener noreferrer"
               class="flex aspect-square max-w-12 items-center justify-center overflow-hidden rounded-full"
             >
               <Icon name="mail" />
