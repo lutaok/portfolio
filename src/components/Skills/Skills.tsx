@@ -10,7 +10,7 @@ type SkillData = {
 const Skills: Component = () => {
   const skillData: SkillData[] = HERO_SKILLS.map((skill) => ({
     name: skill.name,
-    alt: `${skill.name} logo`,
+    alt: `The ${skill.name} logo`,
   }));
 
   return (
@@ -18,7 +18,7 @@ const Skills: Component = () => {
       <For each={skillData}>
         {(skill) => (
           <li>
-            <SkillCircle name={skill.name} alt={skill.name} label={skill.name} />
+            <SkillCircle name={skill.name} alt={skill.alt} label={skill.name} />
           </li>
         )}
       </For>

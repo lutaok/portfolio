@@ -19,6 +19,7 @@ const BaseLayout: Component<BaseLayoutProps> = (props) => {
       <Title>{props.title}</Title>
       <Header />
       <button
+        aria-label="Click to scroll to top of the page"
         class="fixed bottom-2 right-2 overscroll-none rounded-full border-2 border-white bg-secondary-700 p-0.5"
         onClick={() => {
           mainRef?.scrollTo(0, 0);

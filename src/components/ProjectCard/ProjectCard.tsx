@@ -31,7 +31,7 @@ const ProjectCard: Component<ProjectCardProps> = (props) => {
         <div>
           <For each={props.links}>
             {(link) => (
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
+              <a href={link.url} target="_blank" rel="noopener noreferrer" aria-label={`Go to ${link.type}`}>
                 <Icon name={link.type === "github" ? "github-logo" : "linkedin-logo"} />
               </a>
             )}
