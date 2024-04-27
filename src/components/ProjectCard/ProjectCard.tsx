@@ -26,7 +26,7 @@ const ProjectCard: Component<ProjectCardProps> = (props) => {
         <p class="grow px-4 py-2 text-sm text-words-50 text-opacity-85">{props.description}</p>
       )}
 
-      <div class="flex items-center justify-between px-4 py-2">
+      <div class="flex flex-col items-center justify-between gap-4 px-4 py-2 sm:flex-row">
         <SkillTags skills={props.skills} />
         <div>
           <For each={props.links}>
