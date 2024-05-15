@@ -122,7 +122,7 @@ export default function Home() {
           Side Projects
         </h2>
 
-        <div class="grid grid-cols-2 justify-around gap-8">
+        <div class="grid grid-cols-1 justify-around gap-8 sm:grid-cols-2">
           <ProjectCard
             title="Solid Modal"
             description={[
