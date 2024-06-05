@@ -80,9 +80,9 @@ export default function Home() {
           company="Accenture"
           startFromMonth="Oct 2023"
           jobTitle="Front End Engineer - Team Leader"
-          description="Develop, build and ship high-quality and accessible websites to a client. Coordinate and lead a team of
+          description="Developed, built and shipped high-quality and accessible websites to a client. Led a team of
             four by providing guidance, mentorship, and support. Managed tight deadlines by prioritizing features and
-            splitting tasks among the team. Own core features of several different projects."
+            splitting tasks among the team. Owned core features of several different projects."
           skills={["Astro", "Svelte", "Typescript", "TailwindCSS"]}
         />
         <WorkExperience
