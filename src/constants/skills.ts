@@ -22,6 +22,9 @@ export const HERO_SKILLS: Skill[] = [
     name: "go",
   },
   {
+    name: "rust",
+  },
+  {
     name: "docker",
   },
 ];
