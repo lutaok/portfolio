@@ -79,7 +79,7 @@ export default function Home() {
         <WorkExperience
           company="Accenture"
           startFromMonth="Oct 2023"
-          jobTitle="Front End Engineer - Team Leader"
+          jobTitle="Front End Engineer"
           description="Developed, built and shipped high-quality and accessible websites to a client. Led a team of
             four by providing guidance, mentorship, and support. Managed tight deadlines by prioritizing features and
             splitting tasks among the team. Owned core features of several different projects."
