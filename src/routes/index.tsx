@@ -79,7 +79,7 @@ export default function Home() {
         <WorkExperience
           company="Accenture"
           startFromMonth="Oct 2023"
-          jobTitle="Front End Engineer"
+          jobTitle="FrontEnd Engineer"
           description="Developed, built and shipped high-quality and accessible websites to a client. Led a team of
             four by providing guidance, mentorship, and support. Managed tight deadlines by prioritizing features and
             splitting tasks among the team. Owned core features of several different projects."
@@ -89,7 +89,7 @@ export default function Home() {
           company="Accenture"
           startFromMonth="Nov 2022"
           endMonth="Oct 2023"
-          jobTitle="Front End Engineer"
+          jobTitle="FrontEnd Engineer"
           description="Developed and shipped a complex and high-performant web app with WYSIWYG features to a client.
             Collaborated closely with UX Designers and Backend Developers to ensure pixel perfect interfaces and
             seamless integrations. Provided mentoring to more junior members on the team"
@@ -99,7 +99,7 @@ export default function Home() {
           company="Engineering"
           startFromMonth="Aug 2020"
           endMonth="Nov 2022"
-          jobTitle="Front End Engineer"
+          jobTitle="FrontEnd Engineer"
           description="Developed and shipped SmartTV web apps used by millions of people. Ensured cross-browser compatibility and
           improved performance by paying close attention to Chrome DevTools metrics. Monitored runtime errors and
           performance through Kibana."

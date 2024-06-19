@@ -14,7 +14,7 @@ const Hero: Component = () => {
         >
           Hello, I'm Lutaok
         </h1>
-        <p>Experienced front-end developer specializing in crafting fast and efficient user interfaces.</p>
+        <p>Experienced FrontEnd Engineer specializing in crafting fast and efficient user interfaces.</p>
         <Skills />
         <div class="flex flex-col justify-center gap-2">
           <span>Find me on:</span>
