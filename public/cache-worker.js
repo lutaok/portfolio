@@ -1,5 +1,7 @@
+const CURRENT_CACHE_KEY = "portfolio-v3";
+
 const addResourcesToCache = async (resources) => {
-  const cache = await caches.open("portfolio-v2");
+  const cache = await caches.open(CURRENT_CACHE_KEY);
   await cache.addAll(resources);
 };
 
@@ -8,7 +10,7 @@ const deleteCache = async (key) => {
 };
 
 const deleteOldCaches = async () => {
-  const cacheKeepList = ["portfolio-v2"];
+  const cacheKeepList = [CURRENT_CACHE_KEY];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
