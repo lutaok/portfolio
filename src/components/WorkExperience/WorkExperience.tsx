@@ -42,7 +42,7 @@ const WorkExperience: Component<WorkExperienceProps> = (props) => {
             <For each={props.skills}>
               {(project) => (
                 <>
-                  <div class="flex grow flex-col gap-2">
+                  <div class="flex grow basis-1/2 flex-col gap-2">
                     <span class="text-sm italic">{project.label}</span>
                     <SkillTags skills={project.skills} />
                   </div>
