@@ -79,8 +79,8 @@ export default function Home() {
         <WorkExperience
           company="Accenture"
           startFromMonth="Oct 2023"
-          jobTitle="FrontEnd Engineer"
-          description="Developed, built and shipped high-quality and accessible websites to a client. Led a team of
+          jobTitle="Front End Engineer"
+          description="Delivered 4 high performant and accessible websites to a client. Led a team of
             four by providing guidance, mentorship, and support. Managed tight deadlines by prioritizing features and
             splitting tasks among the team. Owned core features of several different projects."
           skills={["Astro", "Svelte", "Typescript", "TailwindCSS"]}
@@ -89,18 +89,18 @@ export default function Home() {
           company="Accenture"
           startFromMonth="Nov 2022"
           endMonth="Oct 2023"
-          jobTitle="FrontEnd Engineer"
+          jobTitle="Front End Engineer"
           description="Developed and shipped a complex and high-performant web app with WYSIWYG features to a client.
             Collaborated closely with UX Designers and Backend Developers to ensure pixel perfect interfaces and
-            seamless integrations. Provided mentoring to more junior members on the team"
+            seamless integrations. Provided mentoring to more junior members on the team."
           skills={["React", "Typescript", "Zustand", "SCSS", "mxGraph"]}
         />
         <WorkExperience
           company="Engineering"
           startFromMonth="Aug 2020"
           endMonth="Nov 2022"
-          jobTitle="FrontEnd Engineer"
-          description="Developed and shipped SmartTV web apps used by millions of people. Ensured cross-browser compatibility and
+          jobTitle="Front End Engineer"
+          description="Developed and shipped SmartTV web apps used by 5 millions people. Ensured cross-browser compatibility and
           improved performance by paying close attention to Chrome DevTools metrics. Monitored runtime errors and
           performance through Kibana."
           skills={[
@@ -126,9 +126,9 @@ export default function Home() {
           <ProjectCard
             title="Solid Modal"
             description={[
-              "Developed an accessible, reusable Modal component for SolidJS ecosystem",
-              "Tested using Vitest and Solid Testing Library",
-              "Shipped on npm as a downloadable library",
+              "Developed an accessible, reusable Modal component for SolidJS ecosystem.",
+              "Tested using Vitest and Solid Testing Library.",
+              "Shipped on npm as a downloadable library.",
             ]}
             skills={["SolidJS", "Typescript", "Vitest", "Solid Testing Library"]}
             links={[
@@ -142,10 +142,10 @@ export default function Home() {
           <ProjectCard
             title="Advent Of Code - Go"
             description={[
-              "Participated in Advent of Code daily challenges using Go",
-              "Competed into private leaderboards for fun",
-              "Achieved 19 stars in the first 10 days",
-              "Donated a small amount to support the project",
+              "Participated in Advent of Code daily challenges using Go.",
+              "Competed into private leaderboards for fun.",
+              "Achieved 19 stars in the first 10 days.",
+              "Donated a small amount to support the project.",
             ]}
             skills={["Go"]}
             links={[
