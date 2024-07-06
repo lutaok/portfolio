@@ -1,4 +1,4 @@
-const CURRENT_CACHE_KEY = "portfolio-v3";
+const CURRENT_CACHE_KEY = "portfolio-v4";
 
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open(CURRENT_CACHE_KEY);
@@ -29,7 +29,6 @@ const getFromCacheFirst = async (request) => {
 self.addEventListener("install", (event) => {
   event.waitUntil(
     addResourcesToCache([
-      "/images/bg-square-luca.png",
       "/assets/astro.svg",
       "/assets/diagmonds.png",
       "/assets/docker.svg",
