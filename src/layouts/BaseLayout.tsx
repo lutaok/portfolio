@@ -18,6 +18,8 @@ const BaseLayout: Component<BaseLayoutProps> = (props) => {
       <Meta name="description" content={props.description} />
       <Title>{props.title}</Title>
       <Header />
+      {props.children}
+      <Footer />
       <button
         aria-label="Click to scroll to top of the page"
         class="fixed bottom-2 right-2 overscroll-none rounded-full border-2 border-white bg-secondary-700 p-0.5"
@@ -27,8 +29,6 @@ const BaseLayout: Component<BaseLayoutProps> = (props) => {
       >
         <Icon name="arrow-up" size="24" />
       </button>
-      {props.children}
-      <Footer />
     </main>
   );
 };
