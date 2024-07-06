@@ -26,9 +26,9 @@ const ProjectCard: Component<ProjectCardProps> = (props) => {
         <p class="grow px-4 py-2 text-sm text-words-50 text-opacity-85">{props.description}</p>
       )}
 
-      <div class="flex flex-col items-center justify-between gap-4 px-4 py-2 sm:flex-row">
+      <div class="flex flex-col justify-between gap-4 px-4 py-2 sm:flex-row">
         <SkillTags skills={props.skills} />
-        <div>
+        <div class="flex h-full items-end place-self-end">
           <For each={props.links}>
             {(link) => (
               <a href={link.url} target="_blank" rel="noopener noreferrer" aria-label={`Go to ${link.type}`}>
