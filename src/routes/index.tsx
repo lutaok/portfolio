@@ -82,8 +82,9 @@ export default function Home() {
           jobTitle="Front End Engineer"
           description="Delivered 4 high performant and accessible websites to a client. Led a team of
             four by providing guidance, mentorship, and support. Managed tight deadlines by prioritizing features and
-            splitting tasks among the team. Owned core features of several different projects."
-          skills={["Astro", "Svelte", "Typescript", "TailwindCSS"]}
+            splitting tasks among the team. Owned core features of several different projects.
+            Evolved and maintained a client's design system made of 50+ components."
+          skills={["Astro", "Svelte", "Typescript", "TailwindCSS", "Storybook", "Sentry"]}
         />
         <WorkExperience
           company="Accenture"
