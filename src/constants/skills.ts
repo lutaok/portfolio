@@ -7,10 +7,13 @@ export const HERO_SKILLS: Skill[] = [
     name: "typescript",
   },
   {
-    name: "react",
+    name: "go",
   },
   {
-    name: "astro",
+    name: "rust",
+  },
+  {
+    name: "react",
   },
   {
     name: "solid",
@@ -19,10 +22,7 @@ export const HERO_SKILLS: Skill[] = [
     name: "svelte",
   },
   {
-    name: "go",
-  },
-  {
-    name: "rust",
+    name: "astro",
   },
   {
     name: "docker",
