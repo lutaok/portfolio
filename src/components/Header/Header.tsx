@@ -8,6 +8,7 @@ const Header: Component = () => {
           <li>
             {/* Buttons were used since fragment identifiers on anchor tags weren't working on multiple clicks on the same link */}
             <button
+              class="px-2 py-1"
               onClick={() => {
                 const target = document.getElementById("work-experiences");
                 history.replaceState(null, "", window.location.pathname + "#work-experiences");
@@ -19,6 +20,7 @@ const Header: Component = () => {
           </li>
           <li>
             <button
+              class="px-2 py-1"
               onClick={() => {
                 const target = document.getElementById("side-projects");
                 history.replaceState(null, "", window.location.pathname + "#side-projects");
